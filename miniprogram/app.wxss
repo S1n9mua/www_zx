@@ -1,0 +1,8 @@
+/**app.wxss**/
+/**coler:#1b262c-#0f4c75-#3282b8-#bbe1fa**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
