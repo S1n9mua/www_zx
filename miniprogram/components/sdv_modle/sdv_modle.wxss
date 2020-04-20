@@ -1,0 +1,33 @@
+/* components/sdv_modle/sdv_modle.wxss */
+.item-list-group{
+  padding: 10rpx 20rpx;
+}
+
+.item-list-group .item-group{
+  padding: 10rpx 0;
+  border-bottom: 1px solid #e4e4e4;
+  display: flex;
+}
+
+.item-group .searh-img{
+  width: 100rpx;
+  height: 80rpx;
+  margin-right: 20rpx; 
+}
+
+.item-group .searh-info{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.searh-info .s-name{
+  font-size: 32rpx;
+}
+.searh-info .s-number{
+  font-size: 28rpx;
+  color: #7b7b7b;
+}
+
+

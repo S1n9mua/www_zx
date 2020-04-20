@@ -1,0 +1,10 @@
+<navigator wx:for="{{items}}" wx:key="one" class="infolist">
+  <view class="info-group">
+    <view class="name">{{item.dv_name}}</view>
+        <view class="infomation">设备型号：{{item.dv_num}}; 上次维护时间：{{item.reparie_date}} ……</view>
+  </view>
+    <view class="thumbnail-group">
+        <image class="thumbnail" src="https://t9.baidu.com/it/u=758922101,1061256434&fm=199&app=68&f=JPEG?w=750&h=750&s=50B0297203606AA34F7C2CC6000050A2">
+        </image>
+    </view>
+</navigator>

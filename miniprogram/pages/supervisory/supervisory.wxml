@@ -1,2 +1,71 @@
 <!--miniprogram/pages/supervisory/supervisory.wxml-->
-<text>miniprogram/pages/supervisory/supervisory.wxml</text>
+<view class="topbanner">
+  <!--搜索以及主功能操作按键-->
+  <view class="opration-group">
+    <searchbar isnavigator="{{true}}"></searchbar>
+    <!--扫描二维码-->
+     <view class="main-menu-group">
+       <view class="main-menu" bindtap='getScancode'>
+          <image src="../../images/middle/sweep.png"></image>
+          <text>扫一扫</text>
+        <view wx:if="{{result !=''}}">
+          <view>扫码的内容:{{result}}</view>
+        </view>
+      </view>
+       <!--设备入库操作-->
+       <navigator class="menu-navigator" url="/pages/stock/stock">
+        <view class="main-menu">
+           <image src="../../images/middle/stock.png"></image>
+           <text>添加设备</text>
+        </view>
+      </navigator>
+      <!--设备取用操作-->
+      <navigator class="menu-navigator" url="/pages/opration/opration">
+        <view class="main-menu">
+           <image src="../../images/middle/take.png"></image>
+           <text>设备取用</text>
+        </view>
+      </navigator>
+      <!--设备检修--> 
+      <navigator class="menu-navigator" url="/pages/repair/repair"> 
+        <view class="main-menu">
+           <image src="../../images/middle/repair.png"></image>
+           <text>设备检修</text>
+        </view>
+      </navigator>
+     </view>
+  </view>
+</view>
+
+<!--待维护设备信息提醒-->
+<view class="repairclock-group">
+   <view class="repairtitle">
+      <view class="clock-group">
+        <image src="../../images/middle/clock.png"></image>
+        <text class="clock-info">待维护设备提醒</text>
+      </view>
+    </view>
+    <view class="repairinfo_group">
+      <view class="repair_banner">
+        <view class="banner">设备编号</view>
+        <view class="banner">设备名称</view>
+        <view class="banner">维护时间</view>
+        <view class="banner">负责人</view>
+      </view>
+      <repair_info items="{{devices}}"></repair_info>
+      <repair_info></repair_info>
+    </view>
+</view>
+
+<!--设备信息列表-->
+<view class="main-info">
+  <view class="infotitle">
+     <view class="inf">
+        <image src="../../images/middle/inf.png"></image>
+        <text class="inf-info">设备列表</text>
+     </view>
+  </view>
+  <dv_modle items="{{devices}}"></dv_modle>
+</view>
+
+   

@@ -1,0 +1,3 @@
+ <searchbar bindsearchinput="onSearchInputEvent"></searchbar>
+ <!--搜索结果 组件监听输入触发事件-->
+  <sdv_modle items="{{devices}}"></sdv_modle>

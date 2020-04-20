@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "searchbar":"/components/searchbar/searchbar",
+    "dv_modle":"/components/dv_modle/dv_modle",
+    "repair_info":"/components/repair_info/repair_info"
+  },
+  "enablePullDownRefresh":true
 }

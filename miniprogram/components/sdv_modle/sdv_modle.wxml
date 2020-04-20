@@ -1,0 +1,10 @@
+<!--components/sdv_modle/sdv_modle.wxml 绑定点击事件-->
+ <view wx:for="{{items}}" wx:key="three" bindtap="onItemTapEvent" class="item-list-group">
+   <view class="item-group">
+    <image src="https://t9.baidu.com/it/u=758922101,1061256434&fm=199&app=68&f=JPEG?w=750&h=750&s=50B0297203606AA34F7C2CC6000050A2" class="searh-img"></image>
+    <view class="searh-info">
+      <view class="s-name">{{item.dv_name}}</view>
+      <view class="s-number">编号：{{item.dv_num}}</view>
+    </view>
+  </view>
+ </view>

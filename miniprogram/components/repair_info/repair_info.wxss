@@ -1,0 +1,14 @@
+.repair_info{
+  margin-top: 20rpx;
+  height: 60rpx;
+  width: 100%;
+  border-bottom: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  font-size: 26rpx;
+}
+
+.repair_info .banner{
+ padding: 8rpx;
+}

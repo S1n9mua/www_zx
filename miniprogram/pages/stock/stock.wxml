@@ -1,0 +1,80 @@
+<!--pages/stock/stock.wxml-->
+<scroll-view class="container">
+  <view class="add_device">
+
+    <form>
+      <view class="add_title">基本信息</view>
+      <view class="add_group">
+        <view class="add_input">
+          <view class="add_input_hd">
+            <view class="add-label">设备类型</view>
+          </view>
+          <view class="add_input_bd">
+            <!-- <view class="{{status==0 ? 'add_input_bd':'hover_list'}}"> -->
+            <input class="addinfo-input" name="dv_type" placeholder-class="place-holder" placeholder='请输入设备类型' />
+          </view>
+        </view>
+
+        <view class="add_input">
+          <view class="add_input_hd">
+            <view class="add-label">设备名称</view>
+          </view>
+          <view class="add_input_bd">
+            <input class="addinfo-input" name="dv_name" placeholder-class="place-holder" placeholder="请输入设备名称" />
+          </view>
+        </view>
+
+        <view class="add_input">
+          <view class="add_input_hd">
+            <view class="add-label">设备编号</view>
+          </view>
+          <view class="add_input_bd">
+            <input class="addinfo-input" name="dv_num" placeholder-class="place-holder" placeholder="请输入设备编号" />
+          </view>
+        </view>
+
+        <view class="add_input">
+          <view class="add_input_hd">
+            <view class="add-label">管理员</view>
+          </view>
+          <view class="add_input_bd">
+            <input class="addinfo-input" name="manage" placeholder-class="place-holder" placeholder="请输入管理员姓名" />
+          </view>
+        </view>
+
+        <view class="add_input">
+          <view class="add_input_hd">
+            <view class="add-label">备注</view>
+          </view>
+          <view class="add_input_bd">
+            <input class="addinfo-input" name="more_info" placeholder-class="place-holder" placeholder="请输入备注信息" />
+          </view>
+        </view>
+
+        <view class="add_input">
+          <view class="add_input_hd">
+            <view class="add-label">设备照片</view>
+          </view>
+          <view class="image-list-group">
+            <view class="image-add" wx:for="{{tempImages}}" wx:key="imageadd" style="width:{{imageSize}}px;height:{{imageSize}}px;">
+              <image src='{{item}}'></image>
+              <view class="close-btn" bindtap="onRemoveBtnTap" data-index="{{index}}"></view>
+            </view>
+            <view class="add-image-btn" style="width:{{imageSize}}px;height:{{imageSize}}px;" bindtap="onAddImageTap">
+              <view>+</view>
+            </view>
+          </view>
+        </view>
+
+      </view>
+
+    </form>
+
+
+
+    <view class="btn-area">
+      <button class="add-btn" bindtap="adddevice">提交</button>
+    </view>
+  </view>
+
+</scroll-view>

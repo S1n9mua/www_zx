@@ -1,1 +1,120 @@
 /* miniprogram/pages/supervisory/supervisory.wxss */
+.opration-group{
+  background:#ADD8E6;
+  padding: 20rpx;
+}
+.opration-group .top-group{
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+}
+
+.top-group .more-group image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.opration-group .main-menu-group{
+  margin-top:30rpx;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20rpx;
+}
+
+.main-menu-group .main-menu{
+  width: 100rpx;
+  height: 120rpx;
+  text-align: center;
+}
+
+.main-menu-group .main-menu image{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.main-menu-group .main-menu text{
+  font-size: 25rpx;
+  color: white;
+}
+
+/*待维护设备提醒wxss*/
+
+.repairclock-group{
+  width: 100%;
+  height: 500rpx;
+  /*border-bottom:1px solid #e4e4e4;*/
+  /* display: flex;  */
+  box-sizing: border-box;
+  padding:10rpx;
+}
+
+.repairclock-group .repairtitle{
+  width:40%;
+  height: 60rpx;
+  margin: 20rpx;
+}
+
+.repairtitle .clock-group{
+  flex-basis: 90rpx;
+  display: flex;
+}
+
+.repairtitle .clock-group image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+
+.repairtitle .clock-group text{
+  font-size: 28rpx;
+}
+.repairclock-group .repairinfo_group{
+  width: 100%;
+  height: 100%;
+}
+.repairclock-group .repairinfo_group .repair_banner{
+  height: 60rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 28rpx;
+}
+
+.repair_banner .banner{
+  background: #ADD8E6;
+  border-radius: 6px;
+  /* border: 1px solid #e4e4e4; */
+  box-sizing: border-box;
+  padding: 8rpx;
+}
+
+/*详细信息列表wxss*/
+
+.main-info{
+  padding:10rpx;
+  margin-top: 20rpx;
+}
+
+.main-info .infotitle{
+  width:40%;
+  height: 60rpx;
+  margin: 20rpx;
+  
+}
+
+.main-info .infotitle .inf{
+  flex-basis: 90rpx;
+  display: flex;
+  text-align: center ;
+}
+
+.main-info .infotitle .inf image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+}
+.main-info .infotitle .inf text{
+  font-size: 28rpx;
+  text-align: center center;
+}
+

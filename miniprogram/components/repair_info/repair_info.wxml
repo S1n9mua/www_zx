@@ -1,0 +1,6 @@
+      <view wx:for="{{items}}" wx:key="two" class="repair_info">
+        <view class="banner">{{item.dv_num}}</view>
+        <view class="banner">{{item.dv_name}}</view>
+        <view class="banner">2020-03-05</view>
+        <view class="banner">{{item.manage}}</view>
+      </view>

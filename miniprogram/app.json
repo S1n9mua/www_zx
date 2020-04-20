@@ -1,19 +1,44 @@
 {
   "pages": [
+    "pages/supervisory/supervisory",
+    "pages/search/search",
+    "pages/stock/stock",
+    "pages/opration/opration",
+    "pages/repair/repair",
+    "pages/sweep/sweep",
     "pages/index/index",
-    "pages/userConsole/userConsole",
     "pages/storageConsole/storageConsole",
     "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
     "pages/chooseLib/chooseLib",
-    "pages/supervisory/supervisory"
+    "pages/userConsole/userConsole",
+    "pages/deployFunctions/deployFunctions",
+    "pages/me/me"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#0f4c75",
+    "navigationBarBackgroundColor": "#ADD8E6",
     "navigationBarTitleText": "岳麓蓝天救援设备管理",
     "navigationBarTextStyle": "white"
-  }
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ADD8E6",
+    "list": [
+      {
+        "pagePath": "pages/supervisory/supervisory",
+        "text": "首页",
+        "iconPath": "images/tabbar/tabbar1.png",
+        "selectedIconPath": "images/tabbar/tabbar1_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "images/tabbar/tabbar2.png",
+        "selectedIconPath": "images/tabbar/tabbar2_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
 }
