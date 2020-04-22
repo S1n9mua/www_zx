@@ -118,3 +118,29 @@
   text-align: center center;
 }
 
+/* 滑动类别导航样式 */
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid gainsboro;
+  text-align: center;
+  line-height:80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 20%;
+  color: #777;
+}
+.on {
+  color: #ADD8E6;
+  border-bottom: 5rpx solid #ADD8E6;
+}
+
+.swiper-box{ 
+  display: block; 
+  height: 100%; 
+  width: 100%; 
+  overflow: hidden; 
+}
+

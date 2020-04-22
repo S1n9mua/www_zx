@@ -8,7 +8,7 @@ page {
 }
 
 .container{
-    padding: 50rpx 30rpx;
+  padding: 50rpx 30rpx;
 }
 
 .add_device{
@@ -104,6 +104,7 @@ page {
   justify-content: center;
   align-items: center;
 }
+
 .add-image-btn view{
   margin-top: -20rpx;
 }
@@ -124,6 +125,7 @@ page {
   padding-top:24rpx; 
   padding-bottom:24rpx; 
 }
+
 .add-btn{
   background-color: #ADD8E6;
   color: #fff;

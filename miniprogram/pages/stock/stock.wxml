@@ -1,7 +1,6 @@
 <!--pages/stock/stock.wxml-->
 <scroll-view class="container">
   <view class="add_device">
-
     <form>
       <view class="add_title">基本信息</view>
       <view class="add_group">
@@ -10,7 +9,6 @@
             <view class="add-label">设备类型</view>
           </view>
           <view class="add_input_bd">
-            <!-- <view class="{{status==0 ? 'add_input_bd':'hover_list'}}"> -->
             <input class="addinfo-input" name="dv_type" placeholder-class="place-holder" placeholder='请输入设备类型' />
           </view>
         </view>
@@ -65,16 +63,12 @@
             </view>
           </view>
         </view>
-
       </view>
 
     </form>
-
-
-
     <view class="btn-area">
       <button class="add-btn" bindtap="adddevice">提交</button>
     </view>
   </view>
 
-</scroll-view>
+  </scroll-view>

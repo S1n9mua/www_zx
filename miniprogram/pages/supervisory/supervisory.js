@@ -7,15 +7,54 @@ Page({
    * 页面的初始数据
    */
   data: {
-    result: ''
+    result: '',
+    //导航状态
+    currentTab: 0,
+    winWidth: 0,
+    winHeight: 0,
+  },
+
+  //监听滑块
+  bindchange: function (e) {
+    //console.log(e.detail.current);
+    var current = e.detail.current;
+    this.setData({
+      currentTab: current
+    });
+  },
+
+  //点击导航
+
+  swichNav: function (e) {
+    //console.log(e.currentTarget.dataset.current);
+    var current = e.currentTarget.dataset.current;
+    this.setData({
+      currentTab: current
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var that = this;
+
+    /**
+     * 获取系统信息
+     */
+    wx.getSystemInfo({
+
+      success: function (res) {
+        that.setData({
+          winWidth: res.windowWidth,
+          winHeight: res.windowHeight
+        });
+      }
+
+    });
+
     //添加数据
-    //this.adddemo();
+    // this.adddemo();
     //获取数据
     // this.getdemo();
 
@@ -46,7 +85,7 @@ Page({
   // adddemo:function(){
   //   db.collection("device_info").add({
   //     data:{
-  //       _id:"dv_four",
+  //       _id:"dv_six",
   //       dv_name:"水下呼吸机",
   //       cycle_time:30,
   //       dv_type:"水域救援工具",

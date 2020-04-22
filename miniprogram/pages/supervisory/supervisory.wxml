@@ -27,17 +27,18 @@
         </view>
       </navigator>
       <!--设备检修--> 
-      <navigator class="menu-navigator" url="/pages/repair/repair"> 
+      <!-- <navigator class="menu-navigator" url="/pages/repair/repair"> 
         <view class="main-menu">
            <image src="../../images/middle/repair.png"></image>
            <text>设备检修</text>
         </view>
-      </navigator>
+      </navigator> -->
      </view>
   </view>
 </view>
 
 <!--待维护设备信息提醒-->
+<!-- 
 <view class="repairclock-group">
    <view class="repairtitle">
       <view class="clock-group">
@@ -55,10 +56,11 @@
       <repair_info items="{{devices}}"></repair_info>
       <repair_info></repair_info>
     </view>
-</view>
+</view> -->
+
 
 <!--设备信息列表-->
-<view class="main-info">
+<!-- <view class="main-info">
   <view class="infotitle">
      <view class="inf">
         <image src="../../images/middle/inf.png"></image>
@@ -68,4 +70,37 @@
   <dv_modle items="{{devices}}"></dv_modle>
 </view>
 
-   
+    -->
+
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">全部</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">类别1</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">类别2</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">类别3</view>
+</view>
+
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight-195}}px" bindchange="bindchange">
+  <swiper-item>
+    <scroll-view style="height:100%;" scroll-y scroll-with-animation>
+      <dv_modle items="{{devices}}"></dv_modle>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view style="height:100%;" scroll-y scroll-with-animation>
+      <dv_modle items="{{devices}}"></dv_modle>
+    </scroll-view>
+  </swiper-item>
+    <swiper-item>
+    <scroll-view style="height:100%;" scroll-y scroll-with-animation  >
+      <dv_modle items="{{devices}}"></dv_modle>
+    </scroll-view>
+  </swiper-item>
+    <swiper-item>
+    <scroll-view style="height:100%;" scroll-y scroll-with-animation  >
+      <dv_modle items="{{devices}}"></dv_modle>
+    </scroll-view>
+  </swiper-item>
+</swiper>
+
+
+

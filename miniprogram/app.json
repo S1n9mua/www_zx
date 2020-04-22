@@ -12,7 +12,8 @@
     "pages/chooseLib/chooseLib",
     "pages/userConsole/userConsole",
     "pages/deployFunctions/deployFunctions",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

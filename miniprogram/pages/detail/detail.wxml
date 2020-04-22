@@ -1,0 +1,64 @@
+
+<view class="container">
+  <view class="add_device">
+    <view class="status-tap">
+      <!-- <text>正常</text> -->
+      <!-- <text>故障</text> -->
+      <text>异常</text>
+    </view>
+    <view class="add_group">
+      <view class="add_input">
+        <view class="add_input_hd">
+          <view class="add-label">设备类型</view>
+        </view>
+        <view class="add_input_bd">液压破拆组</view>
+      </view>
+
+      <view class="add_input">
+        <view class="add_input_hd">
+          <view class="add-label">设备名称</view>
+        </view>
+        <view class="add_input_bd">液压破拆组</view>
+      </view>
+
+      <view class="add_input">
+        <view class="add_input_hd">
+          <view class="add-label">设备编号</view>
+        </view>
+        <view class="add_input_bd">A-05-1014</view>
+      </view>
+
+      <view class="add_input">
+        <view class="add_input_hd">
+          <view class="add-label">管理员</view>
+        </view>
+        <view class="add_input_bd">张小喵</view>
+      </view>
+
+      <view class="add_input">
+        <view class="add_input_hd">
+          <view class="add-label">备注</view>
+        </view>
+        <view class="add_input_bd">请输入备注信息，请输入备注信息，请输入备注信息请输入备注信息请输入备注信息请输入备注信息请输入备注信息请输入备注信息请输入备注信息请输入备注信息</view>
+      </view>
+
+      <view class="add_input">
+        <view class="add_input_hd">
+          <view class="add-label">设备照片</view>
+        </view>
+        <view class=".add_input_bd">
+          <image src="https://7975-yundemo-gqf57-1301922706.tcb.qcloud.la/QQ%E5%9B%BE%E7%89%8720200420202348.jpg?sign=fe282ed516666573cb0a50770b062656&t=1587479988" mode="aspectFill" style="width:100%;max-height:300rpx;"></image>
+
+        </view>
+      </view>
+    </view>
+
+    <view class="btn-area">
+      <button class="d-btn" bindtap="deletedevice">删除设备</button>
+      <button class="r-btn" bindtap="bugdevice">故障报备</button>
+      <button class="r-btn" bindtap="repairdevice">检验通过</button>
+    </view>
+
+  </view>
+
+</view>
